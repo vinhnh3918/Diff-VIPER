@@ -22,6 +22,8 @@
 		04DAC0BD29E648050072553A /* ListCoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DAC0BB29E648050072553A /* ListCoinViewController.swift */; };
 		04DAC0BE29E648050072553A /* ListCoinViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04DAC0BC29E648050072553A /* ListCoinViewController.xib */; };
 		04DAC0C129E648EA0072553A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 04DAC0C029E648EA0072553A /* Alamofire */; };
+		04DAC0C429E65B230072553A /* ListCoinPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DAC0C329E65B230072553A /* ListCoinPresenter.swift */; };
+		04DAC0C729E65BBF0072553A /* MockListCoinAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DAC0C629E65BBF0072553A /* MockListCoinAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,8 @@
 		04DAC0B929E647E10072553A /* ListCoinInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCoinInteractor.swift; sourceTree = "<group>"; };
 		04DAC0BB29E648050072553A /* ListCoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCoinViewController.swift; sourceTree = "<group>"; };
 		04DAC0BC29E648050072553A /* ListCoinViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListCoinViewController.xib; sourceTree = "<group>"; };
+		04DAC0C329E65B230072553A /* ListCoinPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCoinPresenter.swift; sourceTree = "<group>"; };
+		04DAC0C629E65BBF0072553A /* MockListCoinAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockListCoinAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,18 +115,14 @@
 		04DAC08229E646AD0072553A /* Diff+VIPER */ = {
 			isa = PBXGroup;
 			children = (
+				04DAC0C529E65B4E0072553A /* API */,
+				04DAC0C229E65AEC0072553A /* ListCoin */,
 				04DAC08329E646AD0072553A /* AppDelegate.swift */,
 				04DAC08529E646AD0072553A /* SceneDelegate.swift */,
 				04DAC08929E646AD0072553A /* Main.storyboard */,
 				04DAC08C29E646B20072553A /* Assets.xcassets */,
 				04DAC08E29E646B20072553A /* LaunchScreen.storyboard */,
 				04DAC09129E646B20072553A /* Info.plist */,
-				04DAC0B329E647950072553A /* Coin.swift */,
-				04DAC0B529E647B00072553A /* ListCoinAPIProtocol.swift */,
-				04DAC0B729E647C70072553A /* ListCoinAPI.swift */,
-				04DAC0B929E647E10072553A /* ListCoinInteractor.swift */,
-				04DAC0BB29E648050072553A /* ListCoinViewController.swift */,
-				04DAC0BC29E648050072553A /* ListCoinViewController.xib */,
 			);
 			path = "Diff+VIPER";
 			sourceTree = "<group>";
@@ -131,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				04DAC09A29E646B30072553A /* Diff_VIPERTests.swift */,
+				04DAC0C629E65BBF0072553A /* MockListCoinAPI.swift */,
 			);
 			path = "Diff+VIPERTests";
 			sourceTree = "<group>";
@@ -142,6 +143,27 @@
 				04DAC0A629E646B30072553A /* Diff_VIPERUITestsLaunchTests.swift */,
 			);
 			path = "Diff+VIPERUITests";
+			sourceTree = "<group>";
+		};
+		04DAC0C229E65AEC0072553A /* ListCoin */ = {
+			isa = PBXGroup;
+			children = (
+				04DAC0B329E647950072553A /* Coin.swift */,
+				04DAC0C329E65B230072553A /* ListCoinPresenter.swift */,
+				04DAC0B929E647E10072553A /* ListCoinInteractor.swift */,
+				04DAC0BB29E648050072553A /* ListCoinViewController.swift */,
+				04DAC0BC29E648050072553A /* ListCoinViewController.xib */,
+			);
+			path = ListCoin;
+			sourceTree = "<group>";
+		};
+		04DAC0C529E65B4E0072553A /* API */ = {
+			isa = PBXGroup;
+			children = (
+				04DAC0B529E647B00072553A /* ListCoinAPIProtocol.swift */,
+				04DAC0B729E647C70072553A /* ListCoinAPI.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,6 +311,7 @@
 				04DAC0B829E647C70072553A /* ListCoinAPI.swift in Sources */,
 				04DAC0B429E647950072553A /* Coin.swift in Sources */,
 				04DAC08629E646AD0072553A /* SceneDelegate.swift in Sources */,
+				04DAC0C429E65B230072553A /* ListCoinPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +320,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04DAC09B29E646B30072553A /* Diff_VIPERTests.swift in Sources */,
+				04DAC0C729E65BBF0072553A /* MockListCoinAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

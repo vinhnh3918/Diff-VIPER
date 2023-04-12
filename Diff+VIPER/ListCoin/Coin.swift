@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Coin: Codable {
+struct Coin: Codable, Equatable {
     let id: String
     let rank: String
     let symbol: String
