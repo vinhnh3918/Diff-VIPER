@@ -24,6 +24,13 @@
 		04DAC0C129E648EA0072553A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 04DAC0C029E648EA0072553A /* Alamofire */; };
 		04DAC0C429E65B230072553A /* ListCoinPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DAC0C329E65B230072553A /* ListCoinPresenter.swift */; };
 		04DAC0C729E65BBF0072553A /* MockListCoinAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DAC0C629E65BBF0072553A /* MockListCoinAPI.swift */; };
+		04DAC0CB29E688B90072553A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DAC0C929E688B90072553A /* LoginViewController.swift */; };
+		04DAC0CE29E689080072553A /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DAC0CD29E689080072553A /* LoginInteractor.swift */; };
+		04DAC0D029E6891F0072553A /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DAC0CF29E6891F0072553A /* LoginPresenter.swift */; };
+		04DAC0D229E6893B0072553A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DAC0D129E6893B0072553A /* User.swift */; };
+		04DAC0D429E6894A0072553A /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DAC0D329E6894A0072553A /* LoginRouter.swift */; };
+		04DAC0D629E691670072553A /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DAC0D529E691670072553A /* AuthService.swift */; };
+		04DAC0DA29E6938F0072553A /* LoginViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DAC0D929E6938F0072553A /* LoginViewProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +71,13 @@
 		04DAC0BC29E648050072553A /* ListCoinViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListCoinViewController.xib; sourceTree = "<group>"; };
 		04DAC0C329E65B230072553A /* ListCoinPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCoinPresenter.swift; sourceTree = "<group>"; };
 		04DAC0C629E65BBF0072553A /* MockListCoinAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockListCoinAPI.swift; sourceTree = "<group>"; };
+		04DAC0C929E688B90072553A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		04DAC0CD29E689080072553A /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		04DAC0CF29E6891F0072553A /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		04DAC0D129E6893B0072553A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		04DAC0D329E6894A0072553A /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		04DAC0D529E691670072553A /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		04DAC0D929E6938F0072553A /* LoginViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +129,7 @@
 		04DAC08229E646AD0072553A /* Diff+VIPER */ = {
 			isa = PBXGroup;
 			children = (
+				04DAC0C829E687A70072553A /* Login */,
 				04DAC0C529E65B4E0072553A /* API */,
 				04DAC0C229E65AEC0072553A /* ListCoin */,
 				04DAC08329E646AD0072553A /* AppDelegate.swift */,
@@ -164,6 +179,20 @@
 				04DAC0B729E647C70072553A /* ListCoinAPI.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		04DAC0C829E687A70072553A /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				04DAC0C929E688B90072553A /* LoginViewController.swift */,
+				04DAC0CD29E689080072553A /* LoginInteractor.swift */,
+				04DAC0CF29E6891F0072553A /* LoginPresenter.swift */,
+				04DAC0D129E6893B0072553A /* User.swift */,
+				04DAC0D329E6894A0072553A /* LoginRouter.swift */,
+				04DAC0D529E691670072553A /* AuthService.swift */,
+				04DAC0D929E6938F0072553A /* LoginViewProtocol.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,14 +333,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04DAC0CB29E688B90072553A /* LoginViewController.swift in Sources */,
 				04DAC0B629E647B00072553A /* ListCoinAPIProtocol.swift in Sources */,
 				04DAC0BA29E647E10072553A /* ListCoinInteractor.swift in Sources */,
 				04DAC0BD29E648050072553A /* ListCoinViewController.swift in Sources */,
+				04DAC0D029E6891F0072553A /* LoginPresenter.swift in Sources */,
 				04DAC08429E646AD0072553A /* AppDelegate.swift in Sources */,
 				04DAC0B829E647C70072553A /* ListCoinAPI.swift in Sources */,
 				04DAC0B429E647950072553A /* Coin.swift in Sources */,
+				04DAC0D229E6893B0072553A /* User.swift in Sources */,
 				04DAC08629E646AD0072553A /* SceneDelegate.swift in Sources */,
+				04DAC0DA29E6938F0072553A /* LoginViewProtocol.swift in Sources */,
+				04DAC0CE29E689080072553A /* LoginInteractor.swift in Sources */,
+				04DAC0D429E6894A0072553A /* LoginRouter.swift in Sources */,
 				04DAC0C429E65B230072553A /* ListCoinPresenter.swift in Sources */,
+				04DAC0D629E691670072553A /* AuthService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

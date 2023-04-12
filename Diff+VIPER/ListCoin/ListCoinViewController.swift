@@ -31,6 +31,10 @@ class ListCoinViewController: UIViewController {
         presenter = ListCoinPresenter(interactor: interactor)
         presenter.attachView(self)
     }
+    
+    deinit {
+        presenter?.detachView()
+    }
 }
 
 extension ListCoinViewController: ListCoinViewProtocol {
